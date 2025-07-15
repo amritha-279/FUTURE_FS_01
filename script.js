@@ -21,7 +21,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
 
     this.reset();
   } catch (err) {
-    document.getElementById("responseMsg").textContent = "❌ Message failed to send.";
+    document.getElementById("responseMsg").textContent = "Message failed to send.";
     console.error("Error:", err);
   }
 });

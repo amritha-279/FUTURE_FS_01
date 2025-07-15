@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 // MongoDB connection
 mongoose.connect("mongodb://127.0.0.1:27017/portfolioDB", {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
 });
+
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB error:"));
